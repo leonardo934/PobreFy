@@ -1,12 +1,14 @@
+import style from "./Header.module.css";
+
 function Header() {
   return (
-  <header>
- <span>PobreFlix</span>
- <nav>
-    <a href="#">Home</a>
-    <a href="#">Assistir</a>
- </nav>
-  </header>
+    <header className={style.header}>
+      <span>PobreFlix</span>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Assistir</a>
+      </nav>
+    </header>
   );
 }
 
