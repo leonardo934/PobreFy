@@ -1,4 +1,7 @@
 import Banner from "./components/Banner";
+import Card from "./components/Card";
+
+
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,15 +10,18 @@ function App() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner image="home" />
       <Container>
-      <h1>Hello World! </h1>
-      <p>Hello World! Estou aprendendo React JS</p>
+        <h1>NIKK</h1>
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    <Card />
       </Container>
       <Footer />
     </>
-    
   );
 }
 
-export default App; 
+export default App;
