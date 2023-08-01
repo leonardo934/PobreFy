@@ -1,6 +1,6 @@
 .header {
   background-color: #000000;
-  border-bottom: 2px solid #f44336;
+  border-bottom: 2px solid rgb(0, 255, 0);
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,7 +12,7 @@
 
 .header span {
     font-size: 2rem;
-    color: #b71c1c;
+    color: rgb(0, 255, 0);
     font-weight: 500;
 }
 
