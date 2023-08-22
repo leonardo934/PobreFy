@@ -1,6 +1,6 @@
 .footer {
   background-color: #000;
-  border-top: 2px solid rgb(0, 255, 0);
+  border-top: 2px solid #00ff00;
   position: absolute;
   width: 100%;
   display: flex;
