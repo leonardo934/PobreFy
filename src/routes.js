@@ -8,7 +8,7 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route  path="/" element={ <Home /> }></Route>
-                <Route  path="/watch" element={ <Watch /> }></Route>
+                <Route  path="/watch/:id" element={ <Watch /> }></Route>
                 <Route  path="*" element={ <PagesNotFound /> }></Route>
             </Routes>
         </BrowserRouter>
