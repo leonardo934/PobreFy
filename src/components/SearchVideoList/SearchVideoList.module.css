@@ -5,7 +5,8 @@
 }
 
 .container input {
-    width: 100%;
+    width: 280px;
+    min-width: 280px;
     padding: 15px 10px;
     margin-bottom: 0.5rem;
     border: 0;

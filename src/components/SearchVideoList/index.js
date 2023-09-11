@@ -16,7 +16,7 @@ const foundVideos = filterVideo(videos, searchText)
         <>
             <section className={styles.container}>
         <input type="search" placeholder="Pequisar..." onChange={event => setSearchText(event.target.value)} value={searchText}/>
-        <VideosList videos={foundVideos}/>
+        <VideosList videos={foundVideos} emptyHeading={`Sem vídos "${searchText}"`}/>
             </section>
         </>
     );
