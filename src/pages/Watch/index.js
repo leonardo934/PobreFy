@@ -5,6 +5,7 @@ import Header from "../../components/Header"
 import { useParams } from "react-router-dom"
 import videos from "../../json/videos.json"
 import PagesNotFound from "../PagesNotFound/index"
+import ScrollToTopButtom from "../../components/ScrollToTopButtom"
 
 function Watch() {
     const params = useParams()
@@ -13,6 +14,7 @@ function Watch() {
 
     return (
         <>
+        <ScrollToTopButtom />
             <Header />
             <Container>
                 <section className={styles.watch}>

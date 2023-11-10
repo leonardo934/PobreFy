@@ -1,20 +1,24 @@
+import Slider from "react-slick";
 import "./Carousel.css"
 
 function Carousel({ children }) {
 
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: false, // true
         speed: 300,
-        variableWidth:true,
-        adaptiveHeight:true,
+        centerMode: false,
+        variableWidth: true,
+        adaptiveHeight: true,
         // slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 4   
     };
-    
+
     return (
         <>
-
+            <Slider {...settings}>
+                { children }
+            </Slider>
         </>
     )
 }

@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 9999;
 }
 
 .header span {
@@ -25,4 +26,26 @@
     color: #fff;
     padding-inline: 1rem;
     font-size: 1.2rem;
+}
+
+
+
+/* extra 01 responsividade */
+@media (max-width: 480px) {
+    .header span {
+        font-size: 1.5rem;
+    }
+    .header a {
+        font-size: 0.95rem;
+        padding-inline: 0.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header span {
+        font-size: 1.5rem;
+    }
+    .header a {
+        font-size: 1,05rem;
+    }
 }
