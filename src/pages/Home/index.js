@@ -9,40 +9,12 @@ import ScrollToTopButtom from "../../components/ScrollToTopButtom"
 
 
 function Home() {
-  function filteredCategory() {
-    const categoryVideo = categories.map((category, index) => {
-
-      return {
-        category: category,
-        video: {
-          id: filterCategory(index).map((video) => video.id),
-        }
-      }
- 
-    })  
-
-    const filterVideos = categoryVideo.filter((cv) => {
-      return cv.video.id.length
-    })
-
-    return (
-
-      filterVideos.map((category) =>
-        <Category category={category}>
-          <Carousel>
-            {category.id.map((video) => <Card id={video.id} key={video.id} />)}
-          </Carousel>
-        </Category>
-      )
-
-
-    )
-
-  }
-  // filteredCategory()
 
   return (
     <>
+
+
+
     <ScrollToTopButtom />
       <Header />
       <Banner image="ouvir" />
@@ -50,7 +22,7 @@ function Home() {
 
 
         {categories.map((category, index) =>
-          <Category category={category}>
+          <Category category={category} key={index} >
             <Carousel>
               {filterCategory(index).map((video) => <Card id={video.id} key={video.id} />)}
             </Carousel>
