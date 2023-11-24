@@ -1,7 +1,7 @@
 import styles from "./SearchVideoList.module.css"
-import VideosList from "../../components/VideosList"
 import { useEffect, useState } from "react";
 import Loader from "../Loader";
+import VideosList from "../VideosList";
 
 // filtrando videos por categoria ou título
 function filterVideos(videos, searchText) {
