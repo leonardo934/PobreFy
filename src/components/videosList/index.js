@@ -1,7 +1,7 @@
 import styles from "./VideosList.module.css";
 import Card from "../Card";
 
-function VideoList({ videos, emptyHeading }) {
+function VideosList({ videos, emptyHeading }) {
     const count = videos.length
     let heading = emptyHeading
     if(count > 0) {
@@ -19,4 +19,4 @@ function VideoList({ videos, emptyHeading }) {
     );
 }
 
-export default VideoList;
+export default VideosList;
